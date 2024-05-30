@@ -1,0 +1,28 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "title": "Paytm-App",
+        "slug": "guitar-fundamentals",
+        "description": "A Full-stck Paytm app with real time transaction Feature.",
+        "price": 99.99,
+        "instructor": "John Doe",
+        "isFeatured": true,
+        "image": "/courses/blues.jpg" ,
+        "gitHubLink":"https://github.com/abhyudaya29/paytm",
+        "deployedLink":"paytm-omega.vercel.app"
+      },
+      {
+        "id": 2,
+        "title": "Piano for Beginners",
+        "slug": "piano-for-beginners",
+        "description": "Start your musical journey with foundational piano skills taught by expert instructors.",
+        "price": 109.99,
+        "instructor": "Jane Smith",
+        "isFeatured": false,
+        "image": "/courses/piano.jpg" 
+      }
+    
+    ]
+  }
+  
