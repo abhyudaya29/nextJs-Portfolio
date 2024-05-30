@@ -56,7 +56,7 @@ const HomePage=()=>{
                 <TypewriterEffect words={words} />
                 </div>
                 {/* </p> */}
-                <p className="font-inter pt-6 text-5xl font-semibold">It's Never to late to start again!</p>
+                <p className="font-inter pt-6 text-5xl font-semibold">It&apos;s Never to late to start again!</p>
 
             </div>
             <div className="flex flex-row justify-center items-center gap-6 mt-10">

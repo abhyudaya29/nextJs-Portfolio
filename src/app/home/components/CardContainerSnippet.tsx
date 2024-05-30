@@ -4,11 +4,14 @@ import React from 'react';
 import { CardBody, CardContainer, CardItem } from "../../components/ui/3d-card";
 import Link from "next/link";
 import chai from "../public/chai.png";
-import Image from "next/image";
-// Interface Cards{
-
-// }
-const CardContainerSnippet = ({title,tagLine,image}) => {
+import Image, { StaticImageData } from "next/image";
+import { strict } from 'assert';
+interface Cards{
+  title:string,
+  tagLine:string,
+  image:string | StaticImageData
+}
+const CardContainerSnippet:React.FC<Cards> = ({title,tagLine,image}) => {
   return (
     <>
       <CardContainer className="inter-var w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto my-4">
