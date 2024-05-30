@@ -1,11 +1,13 @@
 "use client";
 
 import React from 'react';
-import { CardBody, CardContainer, CardItem } from "../../../app/components/ui/3d-card";
+import { CardBody, CardContainer, CardItem } from "../../components/ui/3d-card";
 import Link from "next/link";
 import chai from "../public/chai.png";
 import Image from "next/image";
+// Interface Cards{
 
+// }
 const CardContainerSnippet = ({title,tagLine,image}) => {
   return (
     <>
