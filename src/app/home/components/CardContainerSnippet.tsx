@@ -9,9 +9,11 @@ import { strict } from 'assert';
 interface Cards{
   title:string,
   tagLine:string,
-  image:string | StaticImageData
+  image:string | StaticImageData,
+  codeBase:string,
+  tryNow:string
 }
-const CardContainerSnippet:React.FC<Cards> = ({title,tagLine,image}) => {
+const CardContainerSnippet:React.FC<Cards> = ({title,tagLine,image,codeBase,tryNow}) => {
   return (
     <>
       <CardContainer className="inter-var w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto my-4">
@@ -42,7 +44,7 @@ const CardContainerSnippet:React.FC<Cards> = ({title,tagLine,image}) => {
             <CardItem
               translateZ={20}
               as={Link}
-              href="https://twitter.com/mannupaaji"
+              href={tryNow}
               target="__blank"
               className="px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-normal dark:text-white"
             >
@@ -50,10 +52,13 @@ const CardContainerSnippet:React.FC<Cards> = ({title,tagLine,image}) => {
             </CardItem>
             <CardItem
               translateZ={20}
-              as="button"
+              as={Link}
+              href={codeBase}
+              target="__blank"
+              // as="button"
               className="px-3 sm:px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs sm:text-sm font-bold"
             >
-              Sign up
+              Code Base
             </CardItem>
           </div>
         </CardBody>
