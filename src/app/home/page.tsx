@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { LampDemo } from "../components/ui/lamp"
 import {ThreeDCardDemo} from "./components/ProjectSection"
+import { Buttons } from "../components/ui/moving-border"
 // import { TypewriterEffectSmooth } from "@/app/components/ui/typewriter-effect";
 // export function TypewriterEffectSmoothDemo() {
 //         const words = [
@@ -69,6 +70,13 @@ const HomePage=()=>{
                 </Button>
                 {/* <Button variant="outline">GitHub</Button>
                 <Button variant="outline">GitHub</Button> */}
+                <Link href="https://drive.google.com/file/d/1_8PJOWP51dOFi7oerbPONk68liGzcJKd/view?usp=sharing">
+                <Buttons 
+                        borderRadius="1.95rem"
+                        className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800" >
+                Resume
+                </Buttons>
+                </Link>
             </div>
             <div className="flex flex-col gap-2 mt-6">
             <LampDemo/>
